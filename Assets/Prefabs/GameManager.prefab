@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1049736203829456}
+  m_IsPrefabParent: 1
+--- !u!1 &1049736203829456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4458213545710596}
+  - component: {fileID: 114937172810785756}
+  - component: {fileID: 114358059540958688}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4458213545710596
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049736203829456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114358059540958688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049736203829456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 674d91c32ae1c1745a6334136751a162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 2
+  turnDelay: 0.1
+  playerFoodPoints: 100
+  playersTurn: 1
+--- !u!114 &114937172810785756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1049736203829456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0806e0394aababd44aa1ce546aa0fde7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columns: 17
+  rows: 17
+  wallCount:
+    minimum: 20
+    maximum: 99
+  foodCount:
+    minimum: 1
+    maximum: 2
+  exit: {fileID: 1795680710368084, guid: 51fa55cae785d174c81b3d0f83636ba4, type: 2}
+  floorTiles:
+  - {fileID: 1303654992166932, guid: db50052353c0d38448212524885d5ac8, type: 2}
+  - {fileID: 1539968563243630, guid: d26dea9e97b9fd54a933242a491c8c87, type: 2}
+  - {fileID: 1206024638154126, guid: 04145c10235590b4c9382dcde2414249, type: 2}
+  - {fileID: 1414087873378190, guid: 2fcff93d8fb68e049b4530443603102f, type: 2}
+  - {fileID: 1809675756669242, guid: 97e247f53ec797c4f8db10fc0188cd59, type: 2}
+  - {fileID: 1981798292739082, guid: 14ec890167f65f04e8bf34473f2cca42, type: 2}
+  - {fileID: 1367820172277550, guid: 04503545f94f77b4c9167b63bc7bff27, type: 2}
+  - {fileID: 1718710918871450, guid: f4f2d1eb5245a8242aea54ccc53e1ce7, type: 2}
+  wallTiles:
+  - {fileID: 1212459812486764, guid: 507271ac59bb4504baf57f7222a451cc, type: 2}
+  - {fileID: 1600571664468484, guid: 4a14bf45b03e4404eaeb6770c9fc4743, type: 2}
+  - {fileID: 1562702137121136, guid: 955139a7d9694f546972914738b1ea0b, type: 2}
+  - {fileID: 1905811247077258, guid: 97b9d19a031139b49b98c04ee649c956, type: 2}
+  - {fileID: 1122932614333846, guid: fbcbe1179873a1b4a9ae9b98dd15ec62, type: 2}
+  - {fileID: 1974237088968546, guid: e23ab3fcc92a61f47b39d557f9d348e6, type: 2}
+  - {fileID: 1138528320942600, guid: 1ce5a0295f87ea0458104db273eee05c, type: 2}
+  - {fileID: 1176614131387712, guid: 253a9ba4b120ffb45a23d0a12fd66440, type: 2}
+  foodTiles:
+  - {fileID: 1696143705454912, guid: aae29802880ed2a4fa568d6d68114597, type: 2}
+  - {fileID: 1010220404865360, guid: 9a6a18e8595790a41bc431106ad597b1, type: 2}
+  enemyTiles:
+  - {fileID: 1160897048415378, guid: cb0b28a1e7bf3cd438c8a97f97585254, type: 2}
+  - {fileID: 1991851375744318, guid: 5ee558b9a2b881f4faa5d47a242e7b7a, type: 2}
+  outerWallTiles:
+  - {fileID: 1127034305267800, guid: a6173ffc5b8b41a4cb3a36cc2b307f14, type: 2}
+  - {fileID: 1150457989411660, guid: abc0a74b52c84264fadd071418a41dee, type: 2}
+  - {fileID: 1936494043289110, guid: e2cdba88647bbf64a80b2441214467e2, type: 2}
